@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+
+</head>
+
+
+<body>
+
+<h2>My First JavaScript</h2>
+<button type="button" 
+onclick="document.getElementById('localDate').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<p id="localDate"></p>
+
+
+<h2>What Can JavaScript Do?</h2>
+<p id="switchMsg">JavaScript can change HTML content.</p>
+<button type="reset" onclick='document.getElementById("switchMsg").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+
+<h1>A Web Page</h1>
+<p id="paragraphChanged">A Paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button>
+<script>
+function myFunction() {
+    document.getElementById("paragraphChanged").innerHTML = "Paragraph changed.";
+}
+</script>
+
+<script>
+function sendAlert() {
+	window.alert("This is your alert");
+}
+
+function sendConfirm() {
+	window.confirm("This is your alert");
+}
+
+function sendOpen() {
+	window.open("This is your alert");
+}
+</script>
+
+<button type="button" onclick="sendAlert()">Alert</button>
+<button type="button" onclick="sendConfirm()">Confirm</button>
+<button type="button" onclick="sendOpen()">Open</button>
+
+</body>
+</html> 
